@@ -5,7 +5,7 @@ library(neuralnet)
 library(readr)
 
 
-data <- read.csv("data.csv")
+data <- read.csv("autism.csv")
 data
 
 str(data)
@@ -16,8 +16,6 @@ head(data)
 data[, 12] <- as.numeric(data[, 12] == "m")
 data[, 13] <- as.numeric(data[, 13] == "Others")
 
-
-data
 
 #converting into numeric
 data$ethnicity<-as.numeric(data$ethnicity) 
