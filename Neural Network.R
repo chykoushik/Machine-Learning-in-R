@@ -4,7 +4,6 @@ library(MASS)
 library(neuralnet)
 library(readr)
 
-
 data <- read.csv("autism.csv")
 data
 
